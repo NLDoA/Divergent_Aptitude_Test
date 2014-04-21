@@ -14,16 +14,20 @@ Have fun coding! :)
 -->
 <html>
     <head>
-        <title>Divergent Simulation Game</title>
+        <title>Divergent Apitude Test</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div>In this game, you take the apitude test from the book Divergent.</div>
+		<div>"Red$hadow is Dauntless!!" :) </div>
         <div>Credit to:</div>
         <div>Red$hadow for the code!</div>
         <script>
-//Version 1.4.1_Release
+//LOL you can't see this!! :)
+//EASTEREGG();
+
+//Version 1.5.0_Release
 var Divergent = false;
 var name;
 var books = false;
@@ -62,14 +66,14 @@ while (game === true)
     while (prompt1 === "What can I do?");
         
     
-    if (prompt1 === "Change clothes")
+    if ((prompt1 === "Change clothes") || (prompt1 === "Change Clothes") || (prompt1 === "CHANGE CLOTHES"))
         {
         Clothes = Abnegation;
         alert("You changed into Abnegation clothes, you are now ready to go to school.");
         }
     if (prompt1 === "Look in your drawer") 
         {
-        alert("You find a few books that you were missing for a while. So that is where they were...");
+        alert("You find a few books that you were missing. So that's where they were...");
         books = true;
         Eridite = Eridite + 1;
         }
@@ -171,15 +175,23 @@ while (game === true)
                                 
             if (prompt3 ===  "Run") 
                 {
-                alert("You lunge at one of the doors, expecting it to open. It is locked. You must come up with another idea.");
+                alert("You lunge at one of the doors, expecting it to open. It is locked. You must come up with another idea, and quickly too, the dog is advancing on you every second you waste.");
                 }
+				
             if (prompt3 === "Tame") 
                 {
                 if (Cheese === true) 
                     {
                     Amity = Amity + 1;
-                    alert("The dog is going crazy for the wedge of cheese in your hand. You throw him some, and he immediately calms down. A little girls runs up to you, thanks you for finding her dog, and runs away. You decide to take bus back to your home.");
+                    alert("The dog is going crazy for the wedge of cheese in your hand. You throw the cheese to the dog, and the dog immediately calms down. A little girls runs up to you, thanks you for finding her dog, and runs away with her dog. You decide to take bus back to your home.");
                     }
+				else
+					{
+					Amity = Amity + 1;
+					alert("You lay on the ground and face the dog.");
+					alert("The dog backs off.");
+					alert("A little girl walks over and pets the dog. 'Thanks for finding my dog for me! I have to go now, but I hope to see you soon!' she says, then runs away with her dog. You decide to take bus back to your home.");
+					}
                 }
                         
             if (prompt3 === "Defend") 
@@ -187,12 +199,14 @@ while (game === true)
                 Eridite = Eridite + 1;
                 alert("You kick over one of the tables, and use it as a giant shield.");
                 alert("The dog easily jumps over it. You lay on the ground as you remember it shows your submission to wolfs.");
-                alert("The dog looks at you and licks your ear. A little girl walks over and pets the dog. 'Thanks for finding my dog for me! I have to go now, but I hope to see you soon!' she says, then runs away. You decide to take bus back to your home.");
+                alert("The dog looks at you and licks your ear. A little girl walks over and pets the dog. 'Thanks for finding my dog for me! I have to go now, but I hope to see you soon!' she says, then runs away with her dog. You decide to take bus back to your home.");
                 }
+				
             if (prompt3 === "Quit") 
                 {
                 game = false;
                 }
+				
             if (prompt3 === "Attack") 
                 {
                 if (Knife === false) 
@@ -226,7 +240,7 @@ while (game === true)
                 alert("He looks at you as if he knows you are lying, then looks away, sadly. 'The test is now over. Your results will be given to you once the effects of the test serum wear off.'");
                 }
                             
-    // This determines if you are Divergent                        
+// This determines if you are Divergent                        
             if (Divergent === true)
                 {
                 alert("'We have some grave news for you... You are divergent'");
