@@ -1,4 +1,4 @@
-X==========Divergent Apitude Test==========X
+##Divergent Apitude Test
 
 This is the test from the Divergent book. See what faction you would be in! :)
 
