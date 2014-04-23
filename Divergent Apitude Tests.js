@@ -1,7 +1,7 @@
-//LOL you can't see this!! :)
+﻿//LOL you can't see this!! :)
 //EASTEREGG();
 
-//Version 2.0.0_Release
+//Version 2.0.1_Release
 var Divergent = false;
 var name;
 var books = false;
@@ -32,8 +32,10 @@ do
         }
     }
     while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") (name === "No") (name === "no") ((name === "NO")))
+
+console.log("Your name is " + name + ".");
 alert("Wake up " + name + "!");
-alert("You are going to be late for the test if you don't wake up!!"); 
+alert("'You are going to be late for the apitude test if you don't wake up!!' you hear your mother calling you from downstairs."); 
 
 // Loop through questions until Game is set to False
 while (game === true)
