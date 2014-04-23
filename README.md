@@ -6,4 +6,4 @@ This is just a regular HTML file with JS in it. Just open it with your favorite 
 
 ##License
 
-License .txt has all of that information.
+LICENSE.md has all of that information.
