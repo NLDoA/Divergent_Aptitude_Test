@@ -1,7 +1,7 @@
 ﻿//LOL you can't see this!! :)
 //EASTEREGG();
 
-//Version 2.0.1_Release
+//Version 2.0.3_Release
 var Divergent = false;
 var name;
 var books = false;
@@ -31,7 +31,7 @@ do
         alert ("Developer mode active. :)");
         }
     }
-    while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") (name === "No") (name === "no") ((name === "NO")))
+    while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") || (name === "No") || (name === "no") || (name === "NO"))
 
 console.log("Your name is " + name + ".");
 alert("Wake up " + name + "!");
