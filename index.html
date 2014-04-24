@@ -26,10 +26,10 @@ Have fun coding! :)
         <div>Credit to:</div>
         <div>Red$hadow for the code!</div>
         <script>
-﻿﻿﻿﻿﻿﻿﻿﻿﻿//LOL you can't see this!! :)
+﻿﻿﻿//LOL you can't see this!! :)
 //EASTEREGG();
 
-//Version 2.2.1_Release
+//Version 2.2.3_Release
 var Divergent = false;
 var name;
 var books = false;
@@ -95,7 +95,7 @@ while (game === true)
         }
         
 //If they say to quit, the game will quit
-    if ((prompt1 === "Quit") || (prompt1 === "QUIT") || (prompt1 === "quit"))
+    if ((prompt1 === "Quit") || (prompt1 === "QUIT") || (prompt1 === "quit") || (prompt1 === "stop") || (prompt1 === "Stop") || (prompt1 === "STOP"))
         {
         game = false;
         }
@@ -108,6 +108,7 @@ while (game === true)
             }
             
         if (Clothes !== "Night") 
+//I hope you changed! :D
             {
             alert("Downstairs there is a mirror and a kitchen. You fix your hair and decide you should eat something. You quickly eat a granola bar, and run to the tests.");
             alert("You now are at the aptitude test waiting lobby, everybody is anxious for the tests. Even the dauntless, who have to jump off a moving train to get to school."); 
@@ -125,7 +126,6 @@ while (game === true)
                 var prompt2 = prompt("You walk forward and see two baskets sitting on one of the tables. One has some cheese in it, the other has a knife. Will you take the knife or the cheese?");
                 if ((prompt2 !== "Knife") && (prompt2 !== "Cheese") && (prompt2 !== "No"))
                     {
-                    alert("Please choose something.");
                     }
                 }
             while ((prompt2 !== "Knife") && (prompt2 !== "Cheese") && (prompt2 !== "No") && (prompt2 !== "KNIFE") && (prompt2 !== "knife") && (prompt2 !== "that one") && (prompt2 !== "cheese") && (prompt2 !== "CHEESE") && (prompt2 === "NO") && (prompt2 === "no"));
@@ -150,7 +150,7 @@ while (game === true)
                 }
  
 //  If neither is chosen, then they are Divergent
-            if ((prompt2 === "No") || (prompt2 === "NO") || (prompt2 === "no"))
+            if ((prompt2 === "No") || (prompt2 === "NO") || (prompt2 === "no") || (prompt2 === "Not happening!"))
                 {
                 prompt("'Are you sure you want to do this?' says the tester.");
                 alert("'That was not a good choice' the tester says");
@@ -160,7 +160,7 @@ while (game === true)
                 }
                         
 //If they say to quit, the game will quit                  
-            if ((prompt2 === "Quit") || (prompt2 === "QUIT") || (prompt2 === "quit"))
+            if ((prompt2 === "Quit") || (prompt2 === "QUIT") || (prompt2 === "quit") || (prompt2 === "stop") || (prompt2 === "Stop") || (prompt2 === "STOP"))
                 {
                 game = false;
                 }
@@ -227,7 +227,7 @@ while (game === true)
                 }
                 
 //If they say to quit, the game will quit
-            if ((prompt3 === "Quit") || (prompt3 === "QUIT") || (prompt3 === "quit"))
+            if ((prompt3 === "Quit") || (prompt3 === "QUIT") || (prompt3 === "quit") || (prompt3 === "stop") || (prompt3 === "Stop") || (prompt3 === "STOP"))
                 {
                 game = false;
                 }
@@ -267,6 +267,11 @@ while (game === true)
                 alert("He looks at you as if he knows you are lying, then looks away, sadly.'You could have helped me...' he says.");
                 alert("'The test is now over. Your results will be given to you once the effects of the test serum wear off.'");
                 }
+            
+            if((prompt4 === "Quit") || (prompt4 === "QUIT") || (prompt4 === "quit") || (prompt4 === "stop") || (prompt4 === "Stop") || (prompt4 === "STOP"))
+                {
+                game = false;
+                }
                             
 // This determines if you are Divergent, a very basic true or false, depending on what you chose in the cheese or knife. If you were divergent, you would have chosen 'no'                    
             if (Divergent === true)
@@ -274,6 +279,9 @@ while (game === true)
                 alert("'We have some grave news for you... You are divergent' the tester says,");
                 alert("'You must be careful, because there are many people who want to kill the divergent.'");
                 alert("'I should not tell you any more, go now.'");
+                alert("Thank you very much for playing this game!! This game is made by: Red$hadow, BMT01, and help from some others. :)");
+                alert("To view other games made by these people, go on GitHub, and search for the PlexiShard organization.");
+                alert("All of our public games are released there!");
                 game = false;
             }
                 else
