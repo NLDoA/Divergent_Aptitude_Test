@@ -1,7 +1,7 @@
 ﻿﻿﻿//LOL you can't see this!! :)
 //EASTEREGG();
 
-//Version 2.2.0_Release
+//Version 2.2.1_Release
 var Divergent = false;
 var name;
 var books = false;
@@ -167,7 +167,7 @@ while (game === true)
             while ((prompt3 === "") || (prompt3 === " ") || (prompt3 === "What can I do?") || (prompt3 === "what can I do?") || (prompt3 === "WHAT CAN I DO?") || (prompt3 === "What Can I Do") || (prompt3 === "what can i do?") || (prompt3 === "what can I do"));
                                 
             if ((prompt3 === "Run") || (prompt3 === "run") || (prompt3 === "RUN"));
-//This is a dog, most likley, the dog can run faster then you.
+//This is a dog, most likley, the dog can run faster then you. Unless your Superman. Or Batman.
                 {
                 alert("You lunge at one of the doors, expecting it to open. It is locked. You must come up with another idea, and quickly too, the dog is advancing on you every second you waste.");
                 }
@@ -246,6 +246,9 @@ while (game === true)
                 alert("'We have some grave news for you... You are divergent' the tester says,");
                 alert("'You must be careful, because there are many people who want to kill the divergent.'");
                 alert("'I should not tell you any more, go now.'");
+                alert("Thank you very much for playing this game!! This game is made by: Red$hadow, BMT01, and help from some others. :)");
+                alert("To view other games made by these people, go on GitHub, and search for the PlexiShard organization.");
+                alert("All of our public games are released there!");
                 game = false;
             }
                 else
