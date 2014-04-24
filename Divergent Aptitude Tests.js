@@ -1,7 +1,7 @@
 ﻿﻿﻿//LOL you can't see this!! :)
 //EASTEREGG();
 
-//Version 2.1.6_Release
+//Version 2.2.0_Release
 var Divergent = false;
 var name;
 var books = false;
@@ -100,7 +100,7 @@ while (game === true)
                     alert("Please choose something.");
                     }
                 }
-            while ((prompt2 !== "Knife") && (prompt2 !== "Cheese") && (prompt2 !== "No"));
+            while ((prompt2 !== "Knife") && (prompt2 !== "Cheese") && (prompt2 !== "No") && (prompt2 !== "KNIFE") && (prompt2 !== "knife") && (prompt2 !== "that one") && (prompt2 !== "cheese") && (prompt2 !== "CHEESE") && (prompt2 === "NO") && (prompt2 === "no"));
                     
 // If Knife is chosen, Dauntless level increases by 2                    
             if ((prompt2 === "Knife") || (prompt2 === "KNIFE") || (prompt2 === "knife") || (prompt2 === "that one"))
