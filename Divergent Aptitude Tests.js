@@ -1,13 +1,12 @@
-﻿//LOL you can't see this!! :)
+﻿﻿﻿//LOL you can't see this!! :)
 //EASTEREGG();
 
-//Version 2.0.3_Release
+//Version 2.1.6_Release
 var Divergent = false;
 var name;
 var books = false;
 var game = true;
 var damage = 100.0;
-var repeat1 = false;
 var Clothes = "Night";
 var Knife = false;
 var Cheese = false;
@@ -23,7 +22,7 @@ var Know_The_Man = false;
 // Get the users name
 do
     {
-    var name = prompt("What do you wish to be called?");
+    var name = prompt("What do you wish to be called during this game?");
         
     if ((name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode"))
         {
@@ -31,11 +30,11 @@ do
         alert ("Developer mode active. :)");
         }
     }
-    while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") || (name === "No") || (name === "no") || (name === "NO"))
+    while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") || (name === "No") || (name === "no") || (name === "NO") || (name === "Not happening") || (name === ":)"))
 
 console.log("Your name is " + name + ".");
 alert("Wake up " + name + "!");
-alert("'You are going to be late for the apitude test if you don't wake up!!' you hear your mother calling you from downstairs."); 
+alert("'You are going to be late for the aptitude test if you don't wake up!!' you hear your mother calling you from downstairs."); 
 
 // Loop through questions until Game is set to False
 while (game === true)
@@ -52,14 +51,14 @@ while (game === true)
     while (prompt1 === "What can I do?");
         
     
-    if ((prompt1 === "Change clothes") || (prompt1 === "Change Clothes") || (prompt1 === "CHANGE CLOTHES"))
+    if ((prompt1 === "Change clothes") || (prompt1 === "Change Clothes") || (prompt1 === "CHANGE CLOTHES") || (prompt1 === "change"))
 //I hope you change your clothes...
         {
         Clothes = Abnegation;
         alert("You changed into Abnegation clothes, you are now ready to go to school.");
         }
         
-    if (prompt1 === "Look in your drawer") 
+    if ((prompt1 === "Look in your drawer") || (prompt1 === "look in your drawer") || (prompt1 === "LOOK IN YOUR DRAWER") || (prompt1 === "Look") || (prompt1 === "look") || (prompt1 === "LOOK"))
 //This I may remove, I mostly just have it in there now because it is curiosity, just how the Eridites were
         {
         alert("You find a few books that you were missing. So that's where they were...");
@@ -68,12 +67,12 @@ while (game === true)
         }
         
 //If they say to quit, the game will quit
-    if (prompt1 === "Quit")
+    if ((prompt1 === "Quit") || (prompt1 === "QUIT") || (prompt1 === "quit"))
         {
         game = false;
         }
         
-    if (prompt1 === "Walk downstairs")  
+    if ((prompt1 === "Walk downstairs") || (prompt1 === "walk downstairs") || (prompt1 === "WALK DOWNSTAIRS") || (prompt1 === "Walk") || (prompt1 === "walk") || (prompt1 === "WALK")) 
         {
         if (Clothes === "Night") 
             {
@@ -83,7 +82,7 @@ while (game === true)
         if (Clothes !== "Night") 
             {
             alert("Downstairs there is a mirror and a kitchen. You fix your hair and decide you should eat something. You quickly eat a granola bar, and run to the tests.");
-            alert("You now are at the apitude test waiting lobby, everybody is anxious for the tests. Even the dauntless, who have to jump off a moving train to get to school."); 
+            alert("You now are at the aptitude test waiting lobby, everybody is anxious for the tests. Even the dauntless, who have to jump off a moving train to get to school."); 
             alert("You can see rooms in front of you, only containg a chair, and a table with some needles on it.");
             alert("One by one everyone goes into the testing room.");
             alert("You hear your name called, “" + name + "”!");
@@ -95,7 +94,7 @@ while (game === true)
 // Ask if they will choose the cheese or the knife.       
             do
                 {
-                var prompt2 = prompt("You walk forward and see two baskets sitting on one of the tables. One has some cheese in it, the other has an arm long knife. Will you take the knife or the cheese?");
+                var prompt2 = prompt("You walk forward and see two baskets sitting on one of the tables. One has some cheese in it, the other has a knife. Will you take the knife or the cheese?");
                 if ((prompt2 !== "Knife") && (prompt2 !== "Cheese") && (prompt2 !== "No"))
                     {
                     alert("Please choose something.");
@@ -104,7 +103,7 @@ while (game === true)
             while ((prompt2 !== "Knife") && (prompt2 !== "Cheese") && (prompt2 !== "No"));
                     
 // If Knife is chosen, Dauntless level increases by 2                    
-            if (prompt2 === "Knife") 
+            if ((prompt2 === "Knife") || (prompt2 === "KNIFE") || (prompt2 === "knife") || (prompt2 === "that one"))
                 {
                 repeat2 = false;
                 alert("You take the knife and the cheese disappears.");
@@ -113,7 +112,7 @@ while (game === true)
                 }
                 
 // If Cheese is chosen, Amity level increases by 2, Eridite level increases by 2
-            if (prompt2 === "Cheese") 
+            if ((prompt2 === "Cheese") || (prompt2 === "cheese") || (prompt2 === "CHEESE"))
                 {
                 repeat2 = false;
                 alert("You take the cheese and the knife disappears.");
@@ -123,7 +122,7 @@ while (game === true)
                 }
  
 //  If neither is chosen, then they are Divergent
-            if (prompt2 === "No") 
+            if ((prompt2 === "No") || (prompt2 === "NO") || (prompt2 === "no"))
                 {
                 prompt("'Are you sure you want to do this?' says the tester.");
                 alert("'That was not a good choice' the tester says");
@@ -133,7 +132,7 @@ while (game === true)
                 }
                         
 //If they say to quit, the game will quit                  
-            if (prompt2 === "Quit") 
+            if ((prompt2 === "Quit") || (prompt2 === "QUIT") || (prompt2 === "quit"))
                 {
                 game = false;
                 }
@@ -144,7 +143,7 @@ while (game === true)
             do
                 {
                 prompt3 = prompt("How will you handle this? (Once again, you can type 'What can I do?')");
-                if (prompt3 === "What can I do?") 
+                if ((prompt3 === "What can I do?") || (prompt3 === "what can I do?") || (prompt3 === "WHAT CAN I DO?") || (prompt3 === "what can I do"))
                     {
 // If they have the knife, they can attack, Run or Defend
                     if (Knife === true) 
@@ -165,15 +164,15 @@ while (game === true)
                         }
                     }
                 }
-            while (prompt3 === "What can I do?");
+            while ((prompt3 === "") || (prompt3 === " ") || (prompt3 === "What can I do?") || (prompt3 === "what can I do?") || (prompt3 === "WHAT CAN I DO?") || (prompt3 === "What Can I Do") || (prompt3 === "what can i do?") || (prompt3 === "what can I do"));
                                 
-            if (prompt3 ===  "Run") 
+            if ((prompt3 === "Run") || (prompt3 === "run") || (prompt3 === "RUN"));
 //This is a dog, most likley, the dog can run faster then you.
                 {
                 alert("You lunge at one of the doors, expecting it to open. It is locked. You must come up with another idea, and quickly too, the dog is advancing on you every second you waste.");
                 }
 				
-            if (prompt3 === "Tame") 
+            if ((prompt3 === "Tame") || (prompt3 === "TAME") || (prompt3 === "tame"))
                 {
                 if (Cheese === true) 
                     {
@@ -190,7 +189,7 @@ while (game === true)
                     }
                 }
                         
-            if (prompt3 === "Defend") 
+            if ((prompt3 === "Defend") || (prompt3 === "defend") || (prompt3 === "DEFEND"))
 //Oh, I see how it is, if you defend, you get to be in the smart faction... :(
                 {
                 Eridite = Eridite + 1;
@@ -200,12 +199,12 @@ while (game === true)
                 }
                 
 //If they say to quit, the game will quit
-            if (prompt3 === "Quit") 
+            if ((prompt3 === "Quit") || (prompt3 === "QUIT") || (prompt3 === "quit"))
                 {
                 game = false;
                 }
 				
-            if (prompt3 === "Attack") 
+            if ((prompt3 === "Attack") || (prompt3 === "attack") || (prompt3 === "Attack"))
                 {
                 if (Knife === true) 
                     {
@@ -218,7 +217,7 @@ while (game === true)
                 else
 //If you really did want to attack though, you would probably have the knife... right?
                     {
-                    alert("You don't have anything to attack with! Look around. There may be something...");
+                    alert("You don't have anything to attack with! You better think of something quickly!");
                     }
                 }
             alert("'Well done' says the tester, 'you are now moving on to the next part of the test.'");
@@ -226,17 +225,15 @@ while (game === true)
             alert("The man on the bus asks you 'Do you know this person?' He sounds desperate.");
       
             var prompt4 = prompt("How do you respond? 'Yes' or 'No'?");
-
-
-            if (prompt4 === "Yes") 
+            if ((prompt4 === "Yes") || (prompt4 === "YES") || (prompt4 === "yes"))
 //If you do know the man, you are truthful
                 {
                 Candor = Candor + 2;
                 alert("'Are you sure you know him? This friend of yours has committed some terrible acts of crime against our world!'");
                 alert("'The test is now over. Your results will be given to you once the effects of the test serum wear off.'");
                 }
-            if (prompt4 === "No") 
-//But if you say you dont, you are peaceful
+            if ((prompt4 === "No") || (prompt4 === "NO") || (prompt4 === "no"))
+//But if you say you don't, you are peaceful
                 {
                 Amity = Amity + 1;
                 alert("He looks at you as if he knows you are lying, then looks away, sadly.'You could have helped me...' he says.");
