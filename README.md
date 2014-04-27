@@ -1,5 +1,5 @@
-Divergent Apitude Test
-======================
+Divergent Aptitude Test
+=======================
 
 This is the test from the Divergent book. See what faction you would be in! :)
 
