@@ -53,7 +53,7 @@ var No = false;
 var Abnegation = 0;
 var Dauntless = 0;
 var Candor = 0;
-var Eridite = 0;
+var Erudite = 0;
 var Amity = 0;
 var Know_The_Man = false;
 
@@ -98,11 +98,11 @@ while (game === true)
         }
         
     if ((prompt1 === "Look in your drawer") || (prompt1 === "look in your drawer") || (prompt1 === "LOOK IN YOUR DRAWER") || (prompt1 === "Look") || (prompt1 === "look") || (prompt1 === "LOOK"))
-//This I may remove, I mostly just have it in there now because it is curiosity, just how the Eridites were
+//This I may remove, I mostly just have it in there now because it is curiosity, just how the Erudites were
         {
         alert("You find a few books that you were missing. So that's where they were...");
         books = true;
-        Eridite = Eridite + 1;
+        Erudite = Erudite + 1;
         }
         
 //If they say to quit, the game will quit
@@ -150,14 +150,14 @@ while (game === true)
                 Dauntless = Dauntless + 2;
                 }
                 
-// If Cheese is chosen, Amity level increases by 2, Eridite level increases by 2
+// If Cheese is chosen, Amity level increases by 2, Erudite level increases by 2
             if ((prompt2 === "Cheese") || (prompt2 === "cheese") || (prompt2 === "CHEESE"))
                 {
                 repeat2 = false;
                 alert("You take the cheese and the knife disappears.");
                 Cheese = true;
                 Amity = Amity + 2;
-                Eridite =  Eridite + 2;
+                Erudite =  Erudite + 2;
                 }
  
 //  If neither is chosen, then they are Divergent
@@ -231,7 +231,7 @@ while (game === true)
             if ((prompt3 === "Defend") || (prompt3 === "defend") || (prompt3 === "DEFEND"))
 //Oh, I see how it is, if you defend, you get to be in the smart faction... :(
                 {
-                Eridite = Eridite + 1;
+                Erudite = Erudite + 1;
                 alert("You kick over one of the tables, and use it as a giant shield.");
                 alert("The dog easily jumps over it. You lay on the ground and stare at it, because you remember it shows your submission to wolfs.");
                 alert("The dog looks at you and licks your ear. A little girl walks over and pets the dog. 'Thanks for finding my dog for me! I have to go now, but I hope to see you soon!' she says, then runs away with her dog. You decide to take bus back to your home.");
@@ -300,8 +300,8 @@ while (game === true)
                         {
                         game = false;
 // Setup an Array that will hold the value for each Level Type
-                        var YourLevelNum = new Array(Abnegation, Amity, Eridite, Dauntless, Candor);
-                        var YourLevelName = new Array("Abnegation", "Amity", "Eridite", "Dauntless", "Candor");
+                        var YourLevelNum = new Array(Abnegation, Amity, Erudite, Dauntless, Candor);
+                        var YourLevelName = new Array("Abnegation", "Amity", "Erudite", "Dauntless", "Candor");
                         var GreatestLevel = 0;
                         var i = 1;
 
