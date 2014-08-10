@@ -10,4 +10,4 @@ If you would like to support us, please go into the support branch, to see more 
 
 ##License
 
-LICENSE.md has all of that information.
+Refer to LICENSE.md.
