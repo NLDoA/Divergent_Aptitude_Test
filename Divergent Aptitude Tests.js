@@ -1,7 +1,7 @@
-﻿﻿﻿//LOL you can't see this!! :)
+//LOL you can't see this!! :)
 //EASTEREGG();
 
-//Version 2.2.4_Release
+//Version 2.2.5_Release
 var Divergent = false;
 var name;
 var books = false;
@@ -30,9 +30,13 @@ do
         alert ("Developer mode active. :)");
         }
     }
-    while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") || (name === "No") || (name === "no") || (name === "NO") || (name === "Not happening") || (name === ":)"))
+    while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") || (name === "No") || (name === "no") || (name === "NO") || (name === "NO!") || (name === "Not happening") || (name === ":)"))
 
-console.log("Your name is " + name + ".");
+if developer = true
+    {
+    console.log("Your name is " + name + ".");
+    }
+
 alert("Wake up " + name + "!");
 alert("'You are going to be late for the aptitude test if you don't wake up!!' you hear your mother calling you from downstairs."); 
 
@@ -90,7 +94,6 @@ while (game === true)
             alert("You walk into the testing room nervously.");
             alert("”The test will now begin. You will be hooked into the computer, and you must complete it to the best of your abilities.” says the tester.");
             alert("You feel a surge of energy and then you enter a room that mimics your cafeteria. You remind yourself that it is just a dream, and nothing can hurt you.");
-
 
 // Ask if they will choose the cheese or the knife.       
             do
@@ -277,10 +280,12 @@ while (game === true)
 //The next line displays what faction you would be in (as long as you are not in divergent)
 //The "YourLevelName[GreatestLevel]" is displayed above on how it works, more or less.
                                 alert("'You are " + YourLevelName[GreatestLevel] + "' says the tester");
-//Credits and stuff
+//Credits and such will only display if the player is not in developer mode.
+                                if developer = false
+                                    {
                                 alert("Thank you very much for playing this game!! This game is made by: Red$hadow, BMT01, and help from some others. :)");
-                                alert("To view other games made by these people, go on GitHub, and search for the PlexiShard organization.");
-                                alert("All of our public games are released there!");
+                                alert("To view other games made by these people, go on GitHub, and search for the PlexiShard organization. All of our public games are released there!");
+                                    }
                         }
                }
         }
