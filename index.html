@@ -42,7 +42,7 @@ Have fun coding! :)
 //LOL you can't see this!! :)
 //EASTEREGG();
 
-//Version 2.2.5_Release
+//Version 2.2.6_Release
 var Divergent = false;
 var name;
 var books = false;
@@ -71,7 +71,7 @@ do
         alert ("Developer mode active. :)");
         }
     }
-    while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") || (name === "No") || (name === "no") || (name === "NO") || (name === "NO!") || (name === "Not happening") || (name === ":)"))
+    while ((name === "") || (name === "/dev") || (name === "/DEV") || (name === "/Dev") || (name === "Developer Mode") || (name === "No") || (name === "no") || (name === "NO") || (name === "NO!") || (name === "Not happening") || (name === "Get away from me") || (name === "Minecraft"))
 
 if developer = true
     {
@@ -99,8 +99,8 @@ while (game === true)
     if ((prompt1 === "Change clothes") || (prompt1 === "Change Clothes") || (prompt1 === "CHANGE CLOTHES") || (prompt1 === "change"))
 //I hope you change your clothes...
         {
-        Clothes = Abnegation;
-        alert("You changed into Abnegation clothes, you are now ready to go to school.");
+        Clothes = Faction;
+        alert("You changed into your birth faction clothes, you are now ready to go to school.");
         }
         
     if ((prompt1 === "Look in your drawer") || (prompt1 === "look in your drawer") || (prompt1 === "LOOK IN YOUR DRAWER") || (prompt1 === "Look") || (prompt1 === "look") || (prompt1 === "LOOK"))
@@ -109,6 +109,10 @@ while (game === true)
         alert("You find a few books that you were missing. So that's where they were...");
         books = true;
         Erudite = Erudite + 1;
+        if developer = true
+            {
+            console.log("Erudite +1");
+            }
         }
         
 //If they say to quit, the game will quit
@@ -153,6 +157,10 @@ while (game === true)
                 alert("You take the knife and the cheese disappears.");
                 Knife = true;
                 Dauntless = Dauntless + 2;
+                if developer = true
+                    {
+                    console.log("Dauntless +2");   
+                    }
                 }
                 
 // If Cheese is chosen, Amity level increases by 2, Erudite level increases by 2
@@ -163,6 +171,11 @@ while (game === true)
                 Cheese = true;
                 Amity = Amity + 2;
                 Erudite =  Erudite + 2;
+                if developer = true
+                    {
+                    console.log("Amity +2");
+                    console.log("Erudite +2");
+                    }
                 }
  
 //  If neither is chosen, then they are Divergent
@@ -173,6 +186,10 @@ while (game === true)
                 alert("Both the knife and the cheese disappear, and you are left with nothing.");
                 No = true;
                 Divergent = true;
+                if developer = true
+                    {
+                    console.log("Divergent = true");   
+                    }
                 }
                         
 //If they say to quit, the game will quit                  
@@ -221,12 +238,20 @@ while (game === true)
                 if (Cheese === true) 
                     {
                     Amity = Amity + 2;
+                    if developer = true
+                        {
+                        console.log("Amity +1");   
+                        }
                     alert("The dog is going crazy for the wedge of cheese in your hand. You throw the cheese to the dog, and the dog immediately calms down. A little girls runs up to you, thanks you for finding her dog, and runs away with her dog. You decide to take bus back to your home.");
                     }
                 else
 //If you were going to tame, you would probably have chosen the cheese though... right?
                     {
                     Amity = Amity + 1;
+                    if developer = true
+                        {
+                        console.log("Amity +1");
+                        }
                     alert("You lay on the ground and face the dog.");
                     alert("The dog backs off.");
                     alert("A little girl walks over and pets the dog. 'Thanks for finding my dog for me! I have to go now, but I hope to see you soon!' she says, then runs away with her dog. You decide to take bus back to your home.");
@@ -237,6 +262,10 @@ while (game === true)
 //Oh, I see how it is, if you defend, you get to be in the smart faction... :(
                 {
                 Erudite = Erudite + 1;
+                if developer = true
+                        {
+                        console.log("Erudite +1");   
+                        }
                 alert("You kick over one of the tables, and use it as a giant shield.");
                 alert("The dog easily jumps over it. You lay on the ground and stare at it, because you remember it shows your submission to wolfs.");
                 alert("The dog looks at you and licks your ear. A little girl walks over and pets the dog. 'Thanks for finding my dog for me! I have to go now, but I hope to see you soon!' she says, then runs away with her dog. You decide to take bus back to your home.");
@@ -253,6 +282,10 @@ while (game === true)
                 if (Knife === true) 
                     {
                     Dauntless = Dauntless + 1;
+                    if developer = true
+                        {
+                        console.log("Dauntless +1"); 
+                        }
                     alert("You manage to stab the dog right between the eyes. You see a little girl run over to you.");
                     alert("'Did you do this to my dog?' She says sobbing");
                     alert("You dont respond, but you are very depressed that you did that.");
@@ -273,6 +306,10 @@ while (game === true)
 //If you do know the man, you are truthful
                 {
                 Candor = Candor + 2;
+                if developer = true
+                        {
+                        console.log("Candor +1");
+                        }
                 alert("'Are you sure you know him? This friend of yours has committed some terrible acts of crime against our world!'");
                 alert("'The test is now over. Your results will be given to you once the effects of the test serum wear off.'");
                 }
@@ -280,6 +317,10 @@ while (game === true)
 //But if you say you don't, you are peaceful
                 {
                 Amity = Amity + 1;
+                if developer = true
+                        {
+                        console.log("Amity +1"); 
+                        }
                 alert("He looks at you as if he knows you are lying, then looks away, sadly.'You could have helped me...' he says.");
                 alert("'The test is now over. Your results will be given to you once the effects of the test serum wear off.'");
                 }
@@ -294,7 +335,8 @@ while (game === true)
                 {
                 alert("'We have some grave news for you... You are divergent' the tester says,");
                 alert("'You must be careful, because there are many people who want to kill the divergent.'");
-                alert("'I should not tell you any more, go now.'");
+                alert("'I should not tell you any more, now go.'");
+                alert("That is the end of the Divergent Aptitude Test!");
                 alert("Thank you very much for playing this game!! This game is made by: Red$hadow, BMT01, and help from some others. :)");
                 alert("To view other games made by these people, go on GitHub, and search for the PlexiShard organization.");
                 alert("All of our public games are released there!");
@@ -324,6 +366,7 @@ while (game === true)
 //Credits and such will only display if the player is not in developer mode.
                                 if developer = false
                                     {
+                                alert("That is the end of the Divergent Aptitude Test!");
                                 alert("Thank you very much for playing this game!! This game is made by: Red$hadow, BMT01, and help from some others. :)");
                                 alert("To view other games made by these people, go on GitHub, and search for the PlexiShard organization. All of our public games are released there!");
                                     }
