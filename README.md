@@ -11,7 +11,7 @@ Refer to LICENSE.md.
 
 ##Want to Help Out?
 
-Go into the "Issues" section on GitHub, and see what you can help out on! Email us at PlexiShardStudios@gmail.com if you want to talk!
+Go into the "[Issues](https://github.com/PlexiShard/Divergent_Aptitude_Test/issues)" section on GitHub, and see what you can help out on! Email us at PlexiShardStudios@gmail.com if you want to talk!
 
 ##Questions, Comments, Concerns?
 
