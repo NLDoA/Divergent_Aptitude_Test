@@ -17,7 +17,7 @@ Go into the "[Issues](https://github.com/PlexiShard/Divergent_Aptitude_Test/issu
 
 Email us at PlexiShardStudios@gmail.com! We will try to respond as soon as we can, but it may take up to a week, so you do have to be patient.
 
-#Donations and Support
+##Donations and Support
 
 Please go to the "Support" branch, or donate, it helps us know that people want us to continue to code, donate to our BitCoin wallet:
 
