@@ -19,15 +19,15 @@ prompt2 = " "
 prompt3 = " "
 prompt4 = " "
 
-while name == "" or name.lower() == "developer":
+while name == "" or name[0:3].lower() == "dev":
     name = input("What do you wish to be called? ")
 
-if(name.lower() == "Developer"):
+if(name.lower() == "developer"):
     developer = True
     print("Developer mode active. :)")
 
 print("Wake up!")
-print("'You are going to be late for the aptitude test if you don't wake up!!' you hear your mother yelling from downstairs.")
+print("'You are going to be late for the aptitude test if you don't wake up!!' you hear your mother yelling from downstairs.\n")
 
 while game == True:
     while prompt1.lower() == "what can I do?" or prompt1.lower() == "change clothes" or prompt1.lower() == "look in your drawers":
