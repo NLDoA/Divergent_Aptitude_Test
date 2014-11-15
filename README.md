@@ -3,7 +3,7 @@ Divergent Aptitude Test
 
 This is the test from the Divergent book. See what faction you would be in! :)
 
-This is just a regular HTML file with JS in it. Just open it with your favorite internet browser to play!
+This is just a regular Python file, download python here: https://www.python.org/ and get the 3.4 version. Then install it, and run the .py file. 
 
 ##License
 
@@ -19,7 +19,7 @@ Email us at PlexiShardStudios@gmail.com! We will try to respond as soon as we ca
 
 ##Donations and Support
 
-Please go to the "Support" branch, or donate, it helps us know that people want us to continue to code, donate to our BitCoin wallet:
+Please donate, it helps us know that people want us to continue to code, donate to our BitCoin wallet:
 
 1MAN6UCSLep4LZnZkRug5pshdjYZgEQuKS
 
