@@ -3,7 +3,7 @@ Divergent Aptitude Test
 
 This is the test from the Divergent book. See what faction you would be in! :)
 
-This is just a regular Python file, download python here: https://www.python.org/ and get the 3.4 version. Then install it, and run the .py file. 
+This is just a regular Python file, download Python here: https://www.python.org/ and get the 3.4 version. Then install it (I suggest you check the box that adds it to the PATH), and then run the .py file. Turn your voulume up, there is a small amount of sound.
 
 ##License
 
