@@ -1,4 +1,4 @@
-##Version 0.3 Alpha
+##Version 0.4 Alpha
 
 name = ""
 game = True
@@ -14,7 +14,7 @@ Dauntless = 0
 Candor = 0
 Erudite = 0
 Amity = 0
-prompt1 = "what can i do?"
+prompt1 = "what"
 prompt2 = " "
 prompt3 = " "
 prompt4 = " "
@@ -24,7 +24,8 @@ while name == "" or name[0:3].lower() == "dev":
 
 if(name.lower() == "developer"):
     developer = True
-    print("Developer mode active. :)")
+    print("Developer mode active. :D")
+    print("Credits should not show at the end.")
 
 print("Wake up!")
 print("'You are going to be late for the aptitude test if you don't wake up!!' you hear your mother yelling from downstairs.\n")
@@ -146,6 +147,12 @@ while game == True:
                 game = False
                 
 while game == False:
-    print("Thank you for playing!")
-    print("I hope you liked the game")
+    if developer == False:
+        print("Thank you for playing!")
+        print("I hope you liked the game")
+        print("If you would like to see more of our projects, look us up on GitHub.")
+        print("My name is XRedShadowX, and my organization's name is PlexiShard.")
+        print("Please contribute if you can!")
+    else:
+        print("I hope the game worked. :D")
     exit = input("Press enter to exit")
