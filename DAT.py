@@ -1,154 +1,206 @@
-##Version 0.5 Alpha
+##Version 1.0_Release
+##
+##
 
+##Import needed module
+##
+import random
+
+##Define Variables
+##
 name = ""
-game = True
+Developer = False
 Divergent = False
-books = False
-Knife = False
-Cheese = False
-No = False
-KnowTheMan = False
-Clothes = "Night"
+clothes = "night"
+item = "none"
+##Prompts below
+prompt1 = "."
+prompt2 = "."
+prompt3 = "."
+prompt4 = "."
+prompt5 = "."
+##Pass
+pass1 = False
+pass2 = False
+pass3 = False
+pass4 = False
+pass5 = False
+##Factions
 Abnegation = 0
 Dauntless = 0
 Candor = 0
 Erudite = 0
 Amity = 0
-prompt1 = "what"
-prompt2 = " "
-prompt3 = " "
-prompt4 = " "
 
-while name == "":
+##Functions
+##
+def Name():
     name = input("What do you wish to be called? >")
     print("Ah, hello " +name+ "! The Divergent Aptitude test will now begin!")
+def DeveloperQuestion():
+    if name.lower == "dev":
+        developer = True
+        print("Developer mode activated.")
+def BedroomScene():
+    global pass1
+    global clothes
+    global Erudite
+    while pass1 == False:
+        prompt1 = input("What would you like to do while you are in your room? >")
+        if prompt1.lower() == "help":
+            print("You can 'change clothes', 'walk downstairs', or 'look around'.")
+        if prompt1.lower() == "walk" and clothes == "night":
+            print("You can't go downstairs yet! You haven't changed your clothes!")
+        if prompt1.lower() == "look":
+            print("You look in your shelfs and find some old books that you were looking for earlier.")
+            Erudite += 1
+        if prompt1.lower() == "change" and clothes != "night":
+            print("You already changed! You don't need to change again.")
+        if prompt1.lower() == "change" and clothes == "night":
+            clothes = "faction"
+            print("You change into your family faction's clothes and are now ready for the day.")
+        if prompt1.lower() == "walk" and clothes != "night":
+            print("You walk downstairs now, ready to go to the test.")
+            pass1 = True
+def StartTest():
+    global name
+    randomnumber = random.randrange(1,25)
+    randomnumber = str(randomnumber)
+    name = str(name)
+    print("When you get to the testing lobby, you see many people there, all of them nervous.\nOne by one people are called into rooms that no one else can see into.\nThe rooms are completely blank, just with one visible door.\nFinally, they call on you, '" +name+ "! Please report to room " +randomnumber+ "!' you hear over the speakers.\nYou walk over to your assigned room, and walk inside.\nOnce inside, you see a chair, a computer setup, a tray with needles on it, and a person.\nThe person directs you to sit down, and injects a blue fluid into your neck.\nYou start to feel heavy, and fall into the simulation.")
+def FirstRoom():
+    global Abnegation
+    global Amity
+    global Candor
+    global Dauntless
+    global Erudite
+    global pass2
+    global pass3
+    global prompt2
+    global prompt3
+    global Divergent
+    global item
+    print("Now you see everything a bit blurry, but can still see you.\nYou are in a blank room, nothing in it except for two bowls.\nOne bowl has a knife in it, the other one with cheese in it.")
+    while pass2 == False:
+        prompt2 = input("Which would you like to choose? >")
+        if prompt2.lower() == "no":
+            pass2 = True
+            Divergent = True
+            print("Really? ...\nFine. You did it though. Not me. That was your choice.\n\n")
+        if prompt2.lower() == "knife":
+            pass2 = True
+            Dauntless += 1
+            item = "knife"
+            print("You pick the knife up.")
+        if prompt2.lower() == "cheese":
+            pass2 = True
+            Amity += 1
+            Abnegation += 1
+            item = "cheese"
+            print("You pick some of the cheese up.")
+        if prompt2.lower() == "help":
+            print("... Really? There are only two choices..... what am I even supposed to put here??\nYou either choose cheese or knife, it isn't that hard.")
+    print("A big dog walks through a door, and the door closes after it.\nThe dog starts growling at you, and you know this is not going to be an easy test.")
+    while pass3 == False:
+        prompt3 = input("What will you do? > ")
+        if prompt3.lower() == "help":
+            print("You can 'attack', 'defend', or (try to)'tame'.")
+        if prompt3.lower() == "attack" and item == "cheese":
+            print("Hey, you're the one who chose cheese, not me. What are you going to do to the dog with cheese?\nStab the side of the dog with cheese? Try again.")
+        if prompt3.lower() == "attack" and item == "knife":
+            pass3 = True
+            Dauntless += 1
+            print("You attack the dog, stabbing the side of the dog with the knife, and the dog and knife dissipates into the air.")
+        if prompt3.lower() == "attack" and item == "none":
+            pass3 = True
+            Dauntless += 1
+            print("You attack the dog, punching it right in the face. The dog seems stunned, but then everything dissipates into the air.")
+        if prompt3.lower() == "tame" and item == "cheese":
+            pass3 = True
+            Amity += 1
+            print("You throw the cheese on the ground, and the dog walks over to it and eats it. Everything then dissipates into the air.")
+        if prompt3.lower() == "tame" and item == "knife":
+            pass3 = True
+            Dauntless -= 5
+            Amity += 1
+            print("")
+        if prompt3.lower() == "tame" and item == "none":
+            pass3 = True
+            print("You kneel down, and hope the dog understands. The dog thankfully does, and licks your face.\nEverything then dissipates into the air.")
+        if prompt3.lower() == "defend" and item == "cheese":
+            pass3 = True
+            Amity += 1
+            Abnegation += 1
+            print("You look for somewhere to hide, and just choose the corner and get in a (more or less) protective stance.\nEverything then dissipates into the air.")
+        if prompt3.lower() == "defend" and item == "knife":
+            pass3 = True
+            Amity += 1
+            Abnegation += 1
+            Dauntless -= 1
+            print("You look for somewhere to hide, and just choose the corner and get in a (more or less) protective stance.\nEverything then dissipates into the air.")
+        if prompt3.lower() == "defend" and item == "none":
+            pass3 = True
+            print("This was kind of your fault just so you know.... :/")
+            print("You look for somewhere to hide, and just choose the corner and get in a (more or less) protective stance.\nEverything then dissipates into the air.")
+def SecondRoom():
+    global Abnegation
+    global Amity
+    global Candor
+    global Dauntless
+    global Erudite
+    global pass4
+    global pass5
+    global prompt4
+    global prompt5
+    print("You now appear on a bus, not many people on it, and there is an old man sitting next to you. You see him reading a newspaper.\nHe looks at you and asks, 'Do you know this man?' as he points to a picture in the newspaper.\n'He has done horrible things to my family and I' he says, tearing up a bit.\nYou see the man, and it is one of your best friends.")
+    while pass4 == False:
+        prompt4 = input("How do you respond? (Yes or no) >")
+        if prompt4.lower() == "yes":
+            Candor += 1
+            print("'Who is he then??' the man asks, seeming angry now.")
+            while pass5 == False:
+                prompt5 = input("Do you tell him? >")
+                if prompt5.lower() == "yes":
+                    pass4 = True
+                    pass5 = True
+                    Candor += 1
+                    print("'You horrible person!!' he yells as he dissipates into the wind like the dog.")
+                if prompt5.lower() == "no":
+                    pass4 = True
+                    pass5 = True
+                    Amity += 1
+                    print("'Why not tell me?! You could have saved me!' he yells as he dissipates into the wind like the dog.")
+        if prompt4.lower() == "no":
+            pass4 = True
+            Amity += 2
+            print("'Hmmmm' he says. He looks at you like he knows you are hiding something.\nHe then dissipates into the wind, just like the dog.")
 
-if(name[0:2].lower() == "dev"):
-    developer = True
-    print("Developer mode active. :D")
-    print("Credits should not show at the end.")
-
-print("'You are going to be late for the aptitude test if you don't wake up!!' you hear your mother yelling from downstairs.\n")
-
-##Main loop below
-while game == True:
-    while prompt3[0:4].lower != "exit" or prompt2[0:4].lower == "stop" or prompt1[0:4].lower() == "what" or prompt1[0:4].lower() == "help":
-        prompt1 = input("What would you like to do while you are in your room? > ")
-        if(prompt1[0:6].lower() == "change"):
-            Clothes = "Faction"
-            print("You changed into your birth faction clothes, now you are ready to go to the test.")
-        elif(prompt1[0:4].lower() == "look"):
-            books = True
-            print("You find some books that you were missing for a while in there.")
-        elif(prompt1[0:4].lower() == "what" or prompt1[0:4].lower() == "help"):
-            print("You can 'look in your drawers', 'walk downstairs', or 'change clothes'.")
-        elif(prompt1[0:4].lower() == "walk" and Clothes == "Night"):
-            print("You are not dressed to go downstairs yet!")
-        elif(prompt1[0:4].lower() == "walk" and Clothes == "Faction"):
-##If you are still in night clothes, you cannot walk downstairs yet.
-            if(Clothes != "Night"):
-                print("Downstairs there is a mirror and a kitchen. You fix your hair and decide that you should eat something. You quickly eat a granola bar, and run to the tests.")
-                print("When you get to the aptitude testing lobby, you look around and see everyone is nervous.")
-                print("You see some rooms in front of you, but you can't see inside because there are no windows to see into the room.")
-                print("One by one, people are called into rooms")
-                print("You hear your name called, " + name + "!")
-                print("You walk in to the testing room nervously.")
-                print("'The test will now begin. You will be hooked into the computer, and you must complete the challenges to the best of your abilities.' says the tester.")
-                print("As the tester gives you the shot to hook you up to the computer, you feel a surge of energy and you enter a room that looks like your cafeteria.\nYou remind yourself that this is just in your head, and nothing can hurt you.")
-            while prompt3[0:4].lower != "exit" or prompt2[0:4].lower != "stop" or prompt2 != "Knife" or prompt2 != "Cheese" or prompt2 != "No":
-                prompt2 = input("You walk forward and see two baskets sitting on one of the tables. One has some cheese on it, the other has a knife.\nWill you take the knife or the cheese? > ")
-                if prompt2[0:2].lower == "no":
-                    Divergent == True
-                    print("You probably shouldn't have done that...")
-                    print("Both the knife and the cheese disappear, and you are left with nothing.\n\a")
-                elif prompt2[0:5].lower == "knife":
-                    Knife = True
-                    Dauntless += 2
-                    print("You pick up the knife, and both baskets disappear, along with the cheese.\n\a")
-                elif prompt2[0:6].lower == "cheese":
-                    Cheese = True
-                    Amity += 2
-                    Erudite += 1
-                    print("You pick up the cheese, and both baskets disappear, along with the knife.\n\a")
-                elif prompt2[0:4].lower == "exit" or prompt2[0:4].lower == "stop":
-                    game = False
-
-                print("A big dog walks through a door, and the door closes after it.")
-                print("The dog starts growling at you, and you know this is not going to be an easy test.")
-            
-                while prompt3[0:3].lower != "exit" or prompt3[0:3].lower != "stop" or prompt3[0:2].lower != "run" or prompt3[0:5].lower != "attack" or prompt3[0:6].lower != "defend" or prompt3[0:4].lower != "tame":
-                    prompt3 = input("What will you do? > ")
-                    if prompt3[0:3].lower == "run":
-                        Amity += 1
-                        print("You lunge at one of the doors, expecting it to open, although it is locked. You must come up with another idea, and quickly too, the dog is advancing on you every second you waste.")
-                    elif prompt3[0:3].lower == "help":
-                        print("You can type 'run', 'tame', 'defend', or 'attack'.")
-                    elif prompt3[0:4].lower == "tame":
-                        if Cheese == True:
-                            Amity += 2
-                            print("The dog is going crazy for the wedge of cheese in your hand. You throw the cheese to the dog, and the dog immediately calms down. A little girls runs up to you, thanks you for finding her dog, and runs away with her dog. You then appear in a bus.")
-                        else:
-                            Amity += 1
-                            print("You lay on the ground and face the dog.\nThe dog backs off because you are showing submission to it.")
-                            print("A little girl walks over and pets the dog. 'Thanks for finding my dog for me! I have to go now, but I hope to see you soon!' she says, then runs away with her dog.")
-                            print("You then appear in a bus.")
-                    elif prompt3[0:6].lower == "defend":
-                        Erudite += 1
-                        Amity += 1
-                        print("You kick over one of the tables, and use it as a shield from the dog.")
-                        print("The dog easily jumps over it and you are face to face with the dog.")
-                        print("You think you are really in trouble now, but then the dog licks your ear. A little girl walks over and pets the dog. 'Thanks for finding my dog for me! I have to go now, but I hope to see you soon!' she says, then runs away with her dog.")
-                        print("You then appear in a bus.")
-                    elif prompt3[0:6].lower == "attack":
-                        if Knife == True:
-                            Dauntless += 2
-                            print("You manage to stab the dog right between the eyes. You see a little girl run over to you.\n'Did you do this to my dog?' She says sobbing.\nYou don't respond, but you are very sad that you did that.\nYou remind yourself that you are still in the test. You then appear in a bus.")
-                        else:
-                            print("You don't have anything to attack with! You better think of something quickly!")
-                    elif prompt3[0:4].lower == "exit" or prompt2[0:4].lower == "stop":
-                        game = False
-            
-            print("You are now on a bus, no one is on it except for you and one other person. The other person is reading a newspaper, the cover of the newspaper has a person on it that you seem to remember, but you don't exactly know their name.")
-            print("The man on the bus asks 'Do you know this person?' he sounds desperate.")
-            
-            while prompt4[0:3].lower != "yes" or prompt4[0:2].lower != "no":
-                prompt4 = input("How do you respond? Yes or No? > ")
-                
-                if prompt4[0:3].lower == "yes":
-                    Candor += 3
-                    print("'Are you sure you know him? This friend of yours has committed some terrible acts of crime against our world!' the man says.")
-                elif prompt4[0:2].lower == "no":
-                    Amity += 3
-                    print("He looks at you as if he knows you are lying, then looks away, sadly.'You could have helped me...' he says.")
-                elif prompt4[0:4].lower == "exit" or prompt2[0:4].lower == "stop":
-                    game = False
-                    
-            print("'The test is now over. Your results will be given to you once the effects of the test serum wear off.' says the tester.")
-            
-            
-            if Divergent == True:
-                print("'We have some grave news for you... You are divergent' the tester says,\n'You must be careful, because there are many people who want to kill the divergent.'\n'I should not tell you any more, now go.'\nThat is the end of the Divergent Aptitude Test!")
-            else:
-##This stuff decides what faction you should be in. The faction with the highest points is your suggested faction
-                yourlevelnum = [abnegation, amity, erudite, dauntless, candor]
-                yourlevelname = ["Abnegation", "Amity", "Erudite", "Dauntless", "Candor"]
-                greatestlevel = 0
-                i = 0
-        
-                for i in range(len(yourlevelnum)):
-                    if greatestlevel < yourlevelnum[i]:
-                        greatestlevel = i
-        
-                print ("You are " + yourlevelname[greatestlevel] + " says the tester.\n")
-                game = False
-                
-while game == False:
-    if developer == False:
-        print("Thank you for playing!")
-        print("I hope you liked the game")
-        print("If you would like to see more of our projects, look us up on GitHub.")
-        print("My name is TrueRedShadow, and my organization's name is PlexiShard.")
-        print("Please contribute if you can!")
+def FinishingUp():
+    yourlevelnum = [Abnegation, Amity, Erudite, Dauntless, Candor]
+    yourlevelname = ["Abnegation", "Amity", "Erudite", "Dauntless", "Candor"]
+    greatestlevel = 0
+    i = 0
+    
+    if Divergent == True:
+        print("\n\n\n\n\n\n\n\n")
+        print("'You must be careful, you are considered Divergent' says the tester, as they hurriedly show you out of the building.")
+        print("\n\n\n\n\n\n\n\n")    
     else:
-        print("I hope the game worked. :D")
-    exit = input("Press enter to exit")
+        for i in range(len(yourlevelnum)):
+            if greatestlevel < yourlevelnum[i]:
+                greatestlevel = i
+        print("\n\n\n\n\n\n\n\n")
+        print("You would adapt most to " + yourlevelname[greatestlevel] + " says the tester.\n\nYou are then directed out of the room, and to your home.")
+        print("\n\n\n\n\n\n\n\n")
+
+##Main Loop
+##
+print("While you are using the program, you can type help at any time to display the options you have.\n")
+
+Name()
+DeveloperQuestion()
+BedroomScene()
+StartTest()
+FirstRoom()
+SecondRoom()
+FinishingUp()
