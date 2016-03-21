@@ -1,9 +1,9 @@
-##Version 1.0_Release
-##
+##Version 1.1_Release
+##https://github.com/PlexiShard/Divergent_Aptitude_Test
 ##
 
 ##Import needed module
-##
+##(Its just for the one random number, it isn't REALLY needed that much)
 import random
 
 ##Define Variables
@@ -13,12 +13,6 @@ Developer = False
 Divergent = False
 clothes = "night"
 item = "none"
-##Prompts below
-prompt1 = "."
-prompt2 = "."
-prompt3 = "."
-prompt4 = "."
-prompt5 = "."
 ##Pass
 pass1 = False
 pass2 = False
